@@ -1,0 +1,139 @@
+:root {
+    --branco-principal: #fff;
+    --cinza-secundario: #c0c0c0;
+    --vermelho-secundario: #cf0e0e;
+    --cor-de-fundo: #00030c;
+    --cor-rodape: #1c1c1c;
+    --fonte-principal: 'Manrope'
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 2em;
+}
+
+.header_link {
+    background-color: var(--cor-de-fundo);
+    font-size: 18px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    padding-left: 1em;
+}
+
+.principal {
+    background-image: url("img/car.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: end;
+    text-align: left;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_apresentacao {
+    justify-content: center;
+    margin-left: 2em;
+}
+
+.container_titulo {
+    margin-bottom: 0.5em;
+    font-size: 32px;
+    color: var(--vermelho-secundario);
+}
+
+.container_texto {
+    margin-bottom: 8em;
+    font-size: 20px;
+}
+
+.secundario {
+    align-items: center;
+    grid-template-columns: 40% 60%;
+}
+
+.descricao_titulo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--vermelho-secundario);
+    margin-bottom: 0.5em;
+}
+
+.descricao_texto {
+    color: var(--branco-principal);
+    font-size: 18px;
+}
+
+.container_descricao {
+    text-align: center;
+    margin-left: 1em;
+}
+
+.img_lista1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.secundario_imagem {
+    width: 45%;
+}
+
+.rodape {
+    background-color: var(--vermelho-secundario);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 0.7em 0;
+    margin-top: 1em;
+}
+
+.rodape_texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin: 0 0.5em;
+}
+
+.rodape_link {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    font-weight: 700;
+}
+
+.header_link:hover {
+    color: var(--vermelho-secundario);
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.rodape_link:hover {
+    color: var(--cor-de-fundo);
+}
+
+.secundario_imagem:hover {
+    width: 50%;
+}
+
+.mapa_img:hover {
+    width: 47.5%;
+}
